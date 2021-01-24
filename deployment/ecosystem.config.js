@@ -10,7 +10,7 @@ module.exports = {
       NODE_ENV: 'production'
     },
     env_production: {
-      APP_PORT: 3000,
+      APP_PORT: 8080,
       API_URL: 'http://localhost:3000',
     }
   }]
