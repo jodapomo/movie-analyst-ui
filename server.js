@@ -14,7 +14,7 @@ app.set('views', __dirname + '/public/views/');
 app.use(express.static(__dirname + '/public'));
 
 
-const apiUrl = `${env.API_PROTOCOL}://${API_HOST}:${API_PORT}`;
+const apiUrl = env.API_URL;
 
 // The homepage route of our application does not interface with the MovieAnalyst API and is always accessible. We won’t use the getAccessToken middleware here. We’ll simply render the index.ejs view.
 app.get('/', function(req, res){
